@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Kununu-Bewertung für Job Portale",
+  "version": "1.0",
+  "description": "Fügt einen Button zur Kununu-Suche hinzu.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": [
+    "https://www.stepstone.de/*",
+    "https://www.linkedin.com/jobs/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.stepstone.de/*", "https://www.linkedin.com/jobs/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
